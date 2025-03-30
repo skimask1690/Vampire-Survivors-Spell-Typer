@@ -18,8 +18,8 @@ Func Terminate()
     Exit 0
 EndFunc
 
-; Define the list of words
-Global $words[] = [ _
+; Define the list of spells
+Global $spells[] = [ _
     "noneladonna", "vivaladonna", "superladonna", "strongestcharacter", "faschiuma", "bioparco", "accidenti", _
     "crystalmakeup", "flymetothemoon", "thetwoassassins", "feldschlacht", "ifeellovevenus", "yattapanda", "carramba", _
     "reset", "languorino", "waitreaction", "quandolodicelui", "paradigmshift", "x-x1viiq", "exdashexoneviiq", "tramezzini", _
@@ -43,7 +43,7 @@ Global $words[] = [ _
     "chupacabra", "finalboss", "missaxalotl", "coldshoulder", "thatsnotlisa", "cauldronking", "gothangel", "bizarreshadeadventure", "karasuman", _
     "sewardzead", "sizematters", "petrifyinglyevil", "theothercount", "embracethereaper", "mathiascronqvist", "iiiiiiivvviviiviiiixxxixiixiiixivxvxvixviixviiixixxxxxi", _
     "entityofchaos", "horsedoor", "headsortails", "walkintothemirror", "kingoftheflies", "pieceoftime", "beastlybowels", "disobeyalucard", "readerspartita", _
-    "isthiswhatamanis", "becomeanvampiyre", "candlebane", "kitchensink", "belnadesbookworm", "wordsthatstartwiths", "blackrockscroll", "greatuseoftime", _
+    "isthiswhatamanis", "becomeanvampiyre", "candlebane", "kitchensink", "belnadesbookworm", "spellsthatstartwiths", "blackrockscroll", "greatuseoftime", _
     "draculasdungeon", "relaxenjoylife", "honesty", "dotgogreenacres", "rottingpizza", "peakgamedesign", "recycletheforest", "recyclethelibrary", _
     "recyclethetower", "buriedinthesnow", "jumptheshark", "divineassault", "thenextstopis", "apritisedano", _
     "thisshouldhavebeenunlockedbydefault", "thistooshouldhavebeenunlockedbydefault", "leadmetothecheese", "thankelrond", "timecompression", "eggseggseggs", _
@@ -59,13 +59,13 @@ Global $words[] = [ _
 While 1
     TogglePause()
 	
-    ; Loop through the words and type them
-    For $i = 0 To UBound($words) - 1
+    ; Loop through the spells and type them
+    For $i = 0 To UBound($spells) - 1
 
         ToolTip('Press the Pause/Break key to toggle the script, or ESC to exit.',0,0)
 	
-        For $j = 1 To StringLen($words[$i])
-            Send(StringMid($words[$i], $j, 1))
+        For $j = 1 To StringLen($spells[$i])
+            Send(StringMid($spells[$i], $j, 1))
     		Sleep(1)
         Next
 	
