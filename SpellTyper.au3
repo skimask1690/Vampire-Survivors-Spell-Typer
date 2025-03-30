@@ -1,6 +1,6 @@
 ; Vampire Survivors Spell Typer
 ; Author: skimask1690
-; An AutoIt script that automates the input of all Vampire Survivors spells/cheat codes.
+; An AutoIt script that types all Vampire Survivors spells/cheat codes.
 
 Global $Paused
 HotKeySet("{PAUSE}", "TogglePause")
